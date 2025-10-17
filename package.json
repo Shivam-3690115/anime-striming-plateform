@@ -1,0 +1,47 @@
+{
+  "name": "anime-streaming-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A professional full-stack anime streaming platform with Next.js, NestJS, and AWS",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "eslint": "^8.55.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.1.0",
+    "turbo": "^1.11.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shivam-3690115/anime-striming-plateform.git"
+  },
+  "keywords": [
+    "anime",
+    "streaming",
+    "nextjs",
+    "nestjs",
+    "hls",
+    "video-platform"
+  ],
+  "license": "MIT"
+}
